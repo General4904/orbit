@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="return"><img src="images/back.png" alt="return"></div>
+            <div class="logo">Logo</div>
+            <div class="cancel"> <img src="images/cancel.svg" alt="" srcset=""></div>
+        </div>
+
+        <div class="hero-text">
+            <h1>
+                Start your learning journey
+            </h1>
+
+            <form action="">
+                <div class="name-section form-section">
+                    <div>
+                        <input type="text" class="form-field" placeholder="First name*" name="firstname" id="firstname">
+                        <p class="error firstname-error">First name is required</p>
+                    </div>
+                    <div>
+                        <input type="text" class="form-field" placeholder="Last name*" name="lastname" id="lastname">
+                        <p class="error lastname-error">Last name is required</p>
+                    </div>
+                </div>
+                <div class="contact-section form-section">
+                    <div>
+                        <input type="email" placeholder="Email address*" class="form-field" name="email" id="email">
+                        <p class="error email-error">Email is required</p>
+                    </div>
+                    <div>
+                        <input type="tel" placeholder="Phone number*" class="form-field" name="tel" id="tel">
+                        <p class="error tel-error">Phone number is required</p>
+                    </div>
+                </div>
+                <div class="contact-section form-section">
+                    <div>
+                        <input type="password" placeholder="Password*" class="form-field" name="password" id="password">
+                        <p class="error password-error">Password is required</p>
+                        <p class="error password-length-error">Password must be at least 8 characters</p>
+                    </div>
+
+                    <div>
+                        <input type="password" placeholder="Confirm Password*" class="form-field"
+                            name="confirm-password" id="confirm-password">
+                        <p class="error confirm-password-error">Please confirm password</p>
+                        <p class="error equal-to-password-error">Passwords don't match</p>
+                    </div>
+                </div>
+                <div class="contact-section form-section">
+                    <select name="learning-track" class="form-field" id="select-field">
+                        <option value="" disabled selected hidden>Select Learning Track</option>
+                    </select>
+                </div>
+
+                <div class=" form-section submit-button">
+                    <button>Get Started</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src='main.js'></script>
+</body>
+
+</html>
