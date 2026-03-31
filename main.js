@@ -55,6 +55,8 @@ form.addEventListener("submit", (e) => {
   } else if (passwordValue.length < 8) {
     password.style.border = `1px solid red`;
     passwordLengthError.style.display = `block`;
+    password.style.backgroundColor = `#FEEEE2`;
+    passwordLengthError.style.color = `black`;
     password.value = "";
   } else if (confirmPasswordValue === "") {
     confirmPassword.style.border = `1px solid red`;

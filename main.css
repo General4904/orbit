@@ -43,6 +43,13 @@ form {
 
 .form-section div {
     margin-bottom: 2em;
+    position: relative;
+}
+
+.form-field-icon {
+    position: absolute;
+    right: 10px;
+    top: 20%;
 }
 
 .form-section {
@@ -81,9 +88,6 @@ p.error {
     display: none;
 }
 
-select {
-    padding: 2em;
-}
 
 select:disabled {
     color: #BCA6E2;
@@ -95,6 +99,7 @@ select:disabled {
 }
 
 button {
+    margin-top: 2em;
     color: white;
     background-color: var(--primary-colour);
     height: 4em;
